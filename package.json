@@ -1,0 +1,24 @@
+{
+  "name": "saxony-example",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "nyc mocha  --require ./test/register.js './packages/*/test/**/*.test.ts'",
+    "lint": " eslint ./packages && tsc --noEmit",
+    "build": "npm run lint && rollup -c build/rollup.config.js",
+    "release": "bash scripts/release.sh",
+    "preversion": "npm run test && npm run build",
+    "postversion": "git push && git push --tags",
+    "doc": "docsify serve ./docs"
+  },
+  "author": "jiangq.leaves@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "@vue/cli": "^4.5.11"
+  }
+}
