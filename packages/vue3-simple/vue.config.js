@@ -6,9 +6,9 @@ module.exports = {
       .include
       .add((file) => {
         console.log(file);
-        return /.*node_modules\/saxony.*/.test(file);
+        return /.*node_modules\/bizic.*/.test(file);
       })
-      // .add('.node_modules/saxony-vue')
+      // .add('.node_modules/bizic-vue')
       .end();
   },
 };

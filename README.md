@@ -1,1 +1,1 @@
-# Saxony demos
+# Bizic.js demos

@@ -1,5 +1,5 @@
-import { inject } from 'saxony';
-import { Observable } from 'saxony-vue';
+import { inject } from 'bizic';
+import { Observable } from 'bizic-vue';
 
 export default class AboutStore extends Observable {
   rootStore = inject('rootStore');

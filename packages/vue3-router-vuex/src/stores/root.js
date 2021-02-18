@@ -1,12 +1,12 @@
 import { createStore } from 'vuex';
-import { inject } from 'saxony';
+import { inject } from 'bizic';
 
 export default function rootStoreFactory() {
   const logger = inject('logger');
 
   return createStore({
     state: {
-      name: 'Saxony',
+      name: 'Bizic',
     },
     mutations: {
     },

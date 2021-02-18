@@ -1,5 +1,5 @@
 import { createStore } from 'vuex';
-import { inject } from 'saxony';
+import { inject } from 'bizic';
 
 export default function homeStoreFactory() {
   /** @type { ReturnType<typeof import('./root').default>} */

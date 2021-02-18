@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import { useService } from 'saxony-vue';
+import { useService } from 'bizic-vue';
 import HelloWorld from './components/HelloWorld.vue';
 
 export default {

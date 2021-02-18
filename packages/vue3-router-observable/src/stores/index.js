@@ -3,9 +3,9 @@ import aboutStoreFactory from './about';
 import rootStoreFactory from './root';
 
 export default {
-  install(saxony) {
-    saxony.registerServiceFactory('rootStore', rootStoreFactory);
-    saxony.registerScopedServiceFactory('home', 'homeStore', homeStoreFactory);
-    saxony.registerScopedServiceFactory('about', 'aboutStore', aboutStoreFactory);
+  install(bizic) {
+    bizic.registerServiceFactory('rootStore', rootStoreFactory);
+    bizic.registerScopedServiceFactory('home', 'homeStore', homeStoreFactory);
+    bizic.registerScopedServiceFactory('about', 'aboutStore', aboutStoreFactory);
   },
 };

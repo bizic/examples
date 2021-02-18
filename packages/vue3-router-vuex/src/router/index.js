@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import { withScopedProvider } from 'saxony-vue';
+import { withScopedProvider } from 'bizic-vue';
 import Home from '../views/Home.vue';
 
 const routes = [
