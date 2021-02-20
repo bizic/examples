@@ -12,7 +12,7 @@ const routes = [
     path: '/about',
     name: 'About',
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-      .then((About) => withScopedProvider(About, 'about')),
+      .then((About) => withScopedProvider(About.default, 'about')),
   },
 ];
 

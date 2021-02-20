@@ -18,6 +18,7 @@ export default {
     const homeStore = useService('homeStore');
     const logger = useService('logger');
     logger.info('homeStore', homeStore);
+    setTimeout(() => homeStore.updateFoo('Hello'), 2000);
     return { homeStore };
   },
 };
