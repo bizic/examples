@@ -2,7 +2,7 @@ import { createApp } from 'vue';
 import Bizic from 'bizic';
 import { withRootProvider } from 'bizic-vue';
 import App from './App.vue';
-import router from './router';
+import routerFactory from './router';
 import store from './stores';
 import service from './services';
 
@@ -12,5 +12,5 @@ bizic.use(service);
 
 const AppWithProvider = withRootProvider(App, bizic);
 const app = createApp(AppWithProvider);
-app.use(router);
+app.use(routerFactory());
 app.mount('#app');

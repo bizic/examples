@@ -15,10 +15,9 @@ const routes = [
       .then((About) => withScopedProvider(About.default, 'about')),
   },
 ];
-
-const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
-  routes,
-});
-
-export default router;
+export default function routerFactory() {
+  return createRouter({
+    history: createWebHistory(process.env.BASE_URL),
+    routes,
+  });
+}
